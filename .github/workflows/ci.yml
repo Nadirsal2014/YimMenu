@@ -1,8 +1,10 @@
 name: CI
 
 on:
-  pull_request:
-    paths:
+  workflow_dispatch:
+  push:
+     branches:
+      - master
       - src/**
       - cmake/**
       - CMakeLists.txt
